@@ -1,3 +1,5 @@
+package com.company.astashkiv;
+
 public class Calendar extends Good {
 
 

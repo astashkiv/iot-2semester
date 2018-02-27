@@ -1,3 +1,7 @@
+package com.company.astashkiv;
+
+import java.util.Arrays;
+
 public class Good {
 	
     public char[] toString;
@@ -5,6 +9,7 @@ public class Good {
 	private boolean aviability;
 	CategoryEnum categoryEnum;
 	private int price;
+	protected int pages;
 
 
 
@@ -13,10 +18,11 @@ public class Good {
 		this.categoryEnum = categoryEnum;
 		this.aviability = aviability;
 		this.setPrice(price);
+		this.pages = pages;
 	}
 
 	String getType() {
-		return null;
+		return categoryEnum.toString();
 	}
 
 	public boolean isAviability() {
@@ -37,7 +43,7 @@ public class Good {
 
 	
 	public int getPages() {
-		return getPages();
+		return pages;
 	}
 
 
@@ -59,8 +65,17 @@ public class Good {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
-	
 
+    @Override
+    public String toString() {
+        return "Good{" +
+
+                "name='" + name + '\'' +
+                ", aviability=" + aviability +
+                ", categoryEnum=" + categoryEnum +
+                ", price=" + price +
+                ", pages=" + pages +
+                '}';
+
+    }
 }

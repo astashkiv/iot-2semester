@@ -1,4 +1,7 @@
+package com.company.astashkiv;
+
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class BookShop {
@@ -10,8 +13,7 @@ public class BookShop {
 	}
 
 	ArrayList<Good> searchByPages (ArrayList<Good> goods) {
-		goods.sort((o1, o2) -> o1.getPages()
-				- o2.getPages());
+		goods.sort(Comparator.comparingInt(Good::getPages));
 		return goods;
 	}
 	

@@ -1,3 +1,7 @@
+package com.company.astashkiv;
+
+import com.company.astashkiv.Good;
+
 public class Sketchbook extends Good {
 	
     private String colour;
