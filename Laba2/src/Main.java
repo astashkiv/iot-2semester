@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -16,9 +17,12 @@ public class Main {
          goods.add(miffBook);
 
          BookShop bookShop = new BookShop(goods);
-
-         System.out.println(bookShop.searchByPages(goods));
-    	
+        
+       
+         List<Good> sortedList = bookShop.searchByPages(goods);
+        		 for(int i = 0; i < sortedList.size(); i++ ) {
+        		 System.out.println(sortedList.get(i).toString);
+        		 }
     	
     }
 }

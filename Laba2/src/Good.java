@@ -1,6 +1,7 @@
 public class Good {
 	
-    private String name;
+    public char[] toString;
+	private String name;
 	private boolean aviability;
 	CategoryEnum categoryEnum;
 	private int price;

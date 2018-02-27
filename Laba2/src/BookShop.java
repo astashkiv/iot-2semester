@@ -5,6 +5,10 @@ public class BookShop {
 	
 
 
+	public BookShop(ArrayList<Good> goods) {
+		// TODO Auto-generated constructor stub
+	}
+
 	ArrayList<Good> searchByPages (ArrayList<Good> goods) {
 		goods.sort((o1, o2) -> o1.getPages()
 				- o2.getPages());
