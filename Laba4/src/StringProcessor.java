@@ -29,7 +29,7 @@ public class StringProcessor {
             String temp = subStr.substring(paswordIndex);
 
             String s = temp;
-            String pat = "(?=.*[a-z])(?=.*[A-Z]).{8,}";
+            String pat = "(?=.*[a-z])(?=.*[A-Z])";
             if (s.matches(pat)) {
                 finalStr.append("pasword:" + temp + " ");
             }
