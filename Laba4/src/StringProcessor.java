@@ -29,7 +29,7 @@ public class StringProcessor {
             String temp = subStr.substring(paswordIndex);
 
             String s = temp;
-            String pat = "(?=.*[a-z])(?=.*[A-Z])";
+            String pat = "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}";
             if (s.matches(pat)) {
                 finalStr.append("pasword:" + temp + " ");
             }
@@ -37,19 +37,13 @@ public class StringProcessor {
                 finalStr.append("pasword:UNSECURED ");
             }
 
-
-
         }
-
-
 
         return finalStr.toString();
 
 
 
     }
-
-
 
     public void showResult(String resultText){
         System.out.println(resultText);
