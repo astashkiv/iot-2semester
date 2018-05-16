@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 package ua.lviv.iot.goods.server;
 
 import ua.lviv.iot.goods.goods.Good;
 import ua.lviv.iot.goods.persistence.dao.GoodsDao;
+=======
+package server;
+
+import persistence.dao.GoodsDao;
+>>>>>>> master
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -29,6 +35,10 @@ public class GoodsService implements Serializable {
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     public Response createGood(Good good) {
+<<<<<<< HEAD
+=======
+        //houseDeviceMap.put(id, houseDeviceObj);
+>>>>>>> master
         goodsDao.persist(good);
         return Response.ok().build();
     }

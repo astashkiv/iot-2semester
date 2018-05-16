@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ua\lviv\iot\goods\server\GoodsService.class
 ua\lviv\iot\goods\goods\Calendar.class
 ua\lviv\iot\goods\manager\BookShop.class
@@ -11,3 +12,5 @@ ua\lviv\iot\goods\persistence\dao\AbstractDao.class
 ua\lviv\iot\goods\rest\config\JaxRsConfig.class
 ua\lviv\iot\goods\persistence\dao\DecorationDaoImpl.class
 ua\lviv\iot\goods\enums\CategoryEnum.class
+=======
+>>>>>>> master
