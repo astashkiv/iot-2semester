@@ -1,6 +1,7 @@
-package server;
+package ua.lviv.iot.goods.server;
 
-import persistence.dao.GoodsDao;
+import ua.lviv.iot.goods.goods.Good;
+import ua.lviv.iot.goods.persistence.dao.GoodsDao;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -28,7 +29,6 @@ public class GoodsService implements Serializable {
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     public Response createGood(Good good) {
-        //houseDeviceMap.put(id, houseDeviceObj);
         goodsDao.persist(good);
         return Response.ok().build();
     }

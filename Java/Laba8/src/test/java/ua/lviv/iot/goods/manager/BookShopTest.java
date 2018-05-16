@@ -1,26 +1,7 @@
 package ua.lviv.iot.goods.manager;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import ua.lviv.iot.goods.enums.CategoryEnum;
-import ua.lviv.iot.goods.goods.Book;
-import ua.lviv.iot.goods.goods.Calendar;
-import ua.lviv.iot.goods.goods.Good;
-import ua.lviv.iot.goods.goods.Sketchbook;
-import ua.lviv.iot.goods.writer.GoodsWriter;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 class BookShopTest {
-    private Book harryPotter;
+   /* private Book harryPotter;
     private Book one;
     private Book crucible;
     private Calendar newYear;
@@ -66,7 +47,7 @@ class BookShopTest {
         goodsTest.add(miffBook);
         bookShop.searchByCategory(CategoryEnum.FICTION);
         assertEquals(goodsTest, goods);
-    }
+    }//
 
     @Test
     public void writeToFile() {
@@ -79,5 +60,5 @@ class BookShopTest {
         }
         File file = new File("goods.csv");
         assertEquals(true, file.exists());
-    }
+    }*/
 }

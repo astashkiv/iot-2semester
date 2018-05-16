@@ -6,7 +6,7 @@ public class Calendar extends Good {
     private String year;
 
     public Calendar(final Integer id, String name, CategoryEnum categoryEnum, boolean aviability, int price, String year, int pages) {
-        super(id, name, categoryEnum, aviability, price, year, 1);
+        super(id, name, categoryEnum, aviability, price, 1);
         this.year = year;
     }
 

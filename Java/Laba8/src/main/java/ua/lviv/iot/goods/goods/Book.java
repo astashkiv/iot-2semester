@@ -7,7 +7,7 @@ public class Book extends Good {
 
 
     public Book(final Integer id, String name, CategoryEnum categoryEnum, boolean aviability, int price, String author, int pages) {
-        super(id, name, categoryEnum, aviability, price, author, pages);
+        super(id, name, categoryEnum, aviability, price, pages);
         this.author = author;
     }
 

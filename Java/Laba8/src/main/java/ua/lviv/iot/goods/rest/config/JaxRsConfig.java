@@ -1,4 +1,4 @@
-package ua.lviv.iot.decor.rest.config;
+package ua.lviv.iot.goods.rest.config;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

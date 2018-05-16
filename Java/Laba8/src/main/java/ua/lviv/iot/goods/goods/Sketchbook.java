@@ -7,7 +7,7 @@ public class Sketchbook extends Good {
     private String colour;
 
     public Sketchbook(final Integer id, String name, CategoryEnum categoryEnum, boolean aviability, int price, String colour, int pages) {
-        super(id, name, categoryEnum, aviability, price, colour, 1);
+        super(id, name, categoryEnum, aviability, price, 1);
         this.colour = colour;
     }
 

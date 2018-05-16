@@ -2,8 +2,13 @@ package ua.lviv.iot.goods.goods;
 
 import ua.lviv.iot.goods.enums.CategoryEnum;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Good {
     public CategoryEnum categoryEnum;
+    @Id
     private Integer id;
     private String name;
     private boolean aviability;
@@ -13,19 +18,19 @@ public class Good {
     public Good() {
     }
 
-    public Good(String name, CategoryEnum categoryEnum, boolean aviability, int price, String author, int pages) {
+    public Good(String name, CategoryEnum categoryEnum, boolean aviability, int price, int pages) {
         this.name = name;
         this.categoryEnum = categoryEnum;
         this.aviability = aviability;
-        this.setPrice(price);
+        this.price = price;
         this.pages = pages;
     }
 
-    public Good(final Integer id, String name, CategoryEnum categoryEnum, boolean aviability, int price, String author, int pages) {
+    public Good(final Integer id, String name, CategoryEnum categoryEnum, boolean aviability, int price, int pages) {
         this.name = name;
         this.categoryEnum = categoryEnum;
         this.aviability = aviability;
-        this.setPrice(price);
+        this.price = price;
         this.pages = pages;
         this.id = id;
     }
