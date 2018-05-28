@@ -2,21 +2,21 @@
 public class main {
 	 public static void main(String args[])
 	    {
-		 Bicycle Ural = new Bicycle();
-		 Bicycle Moscow80 = new Bicycle("BMX", "village", "USSR", 1200);
-		 Bicycle Ukraina = new Bicycle("extreme", "city", "Zhytomyr", 3445, true);
+		 Bicycle ural = new Bicycle();
+		 Bicycle moscow80 = new Bicycle("BMX", "village", "USSR", 1200);
+		 Bicycle ukraina = new Bicycle("extreme", "city", "Zhytomyr", 3445, true);
 	        
-	        System.out.println(Ural.toString());
-	        System.out.println(Moscow80.toString());
-	        System.out.println(Ukraina.toString());
+	        System.out.println(ural.toString());
+	        System.out.println(moscow80.toString());
+	        System.out.println(ukraina.toString());
 	        
-	        Ural.resetValues("portable", "mountains", "China", 740, true);
+	        ural.resetValues("portable", "mountains", "China", 740, true);
 	        
-	        Ural.printSum();
-	        Moscow80.printSum();
-	        Ukraina.printSum();
+	        ural.printSum();
+	        moscow80.printSum();
+	        ukraina.printSum();
 	        
-	        Ural.setDiscountPrice(999);
+	        ural.setDiscountPrice(999);
 	        
 	        Bicycle.printStaticSum();
 	        

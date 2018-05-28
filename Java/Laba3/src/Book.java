@@ -6,13 +6,13 @@ public class Book extends Good {
 	
 	
     private String author;
-	int pages;
+    int pages;
 
 
 	public Book(String name, CategoryEnum categoryEnum, boolean aviability, int price, String author, int pages) {
 		super(name, categoryEnum, aviability, price, author, pages);
 		this.author = author;
-		this.pages = pages; 
+		this.pages = pages;
 	}
 
 
