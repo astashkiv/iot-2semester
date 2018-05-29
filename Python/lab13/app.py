@@ -38,7 +38,7 @@ class GoodsList(Resource):
 
     @staticmethod
     def get():
-        return {'All goods available': [marshal(goods, goods_fields) for good in goods]}
+        return {[marshal(goods, goods_fields) for good in goods]}
 
     def put(self):
         args = self.reqparse.parse_args()
@@ -52,7 +52,7 @@ class GoodsList(Resource):
             'pages': args['pages']
         }
         goods.append(good)
-        return {'spare': marshal(good, goods_fields)}, 201
+        return {marshal(good, goods_fields)}, 201
 
     def post(self):
         args = self.reqparse.parse_args()
@@ -64,7 +64,7 @@ class GoodsList(Resource):
         for k, v in args.items():
             if v is not None:
                 good[k] = v
-        return {'good': marshal(good, goods_fields)}
+        return {marshal(good, goods_fields)}
 
 
 class Good(Resource):
@@ -79,10 +79,10 @@ class Good(Resource):
         super(Good, self).__init__()
 
     def get(self, id):
-        spare = [good for good in goods if good.get('id') == id]
-        if len(spare) == 0:
+        good = [good for good in goods if good.get('id') == id]
+        if len(good) == 0:
             abort(404)
-        return {'good': marshal(spare[0], goods_fields)}
+        return {marshal(good[0], goods_fields)}
 
     def delete(self, id):
         good = [good for good in goods if good.get('id') == id]
